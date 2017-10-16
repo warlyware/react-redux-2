@@ -1,6 +1,6 @@
 export default (state = null, action) => {
   switch(action.type) {
-    case 'GAME-SELECTED':
+    case 'GAME_SELECTED':
       return action.payload;
   }
 
