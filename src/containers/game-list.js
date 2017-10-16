@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-export default class GameList extends Component {
+class GameList extends Component {
   renderList() {
     return this.props.games.map((game) => {
       return(
@@ -20,3 +21,11 @@ export default class GameList extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    games: state.games
+  };
+}
+
+export default connect(mapStateToProps)(GameList);
