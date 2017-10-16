@@ -13,7 +13,8 @@ class GameDetail extends Component {
     return(
       <div>
         <h3>Details</h3>
-        <div>{this.props.game.title}</div>
+        <div>Title: {this.props.game.title}</div>
+        <div>Length: {this.props.game.hoursToBeat} hours</div>
       </div>
     );
   }
