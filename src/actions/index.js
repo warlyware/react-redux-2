@@ -1,3 +1,6 @@
-function selectGame(game) {
-  console.log(`A game has been selected: ${game.title}`);
+export function selectGame(game) {
+  return {
+    type: `GAME_SELECTED`,
+    payload: game
+  }
 }

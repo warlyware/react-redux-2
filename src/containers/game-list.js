@@ -8,7 +8,8 @@ class GameList extends Component {
   renderList() {
     return this.props.games.map((game) => {
       return(
-        <li key={game.title}
+        <li onClick={() => this.props.selectGame(game)}
+        key={game.title}
         className="list-group-item">
           {game.title}
         </li>
